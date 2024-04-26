@@ -1,0 +1,100 @@
+<!--
+Author: Andrew J. McDonald
+Date: 17/07/2023
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Active Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom right, #ff77aa, #66aaff);
+            color: #333;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        th {
+            background-color: #ff77aa;
+            color: #fff;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+        .datetime {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 19px;
+            color: #fff;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .total-active-users {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 20px;
+            color: #fff;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <meta http-equiv="refresh" content="5">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Active Users</h1>
+    <div class="datetime">
+        {{ datetime }}
+    </div>
+    <div class="total-active-users">
+        Total Active Users: {{ total_active_users }}
+    </div>
+    <table id="activeUsersTable">
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Active Users</th>
+                <th>Location ID</th>
+                <th>Location Type</th>
+                <th>Parent Location Name</th>
+                <th>Parent Parent Location Name</th>
+                <th>Last Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in activeUsers %}
+                <tr>
+                    <td>{{ user['locationName'] }}</td>
+                    <td>{{ user['activeUsers'] }}</td>
+                    <td>{{ user['locationID'] }}</td>
+                    <td>{{ user['locationType'] }}</td>
+                    <td>{{ user['locationParentName'] }}</td>
+                    <td>{{ user['locationParentParentName'] }}</td>
+                    <td>{{ user['lastUpdateTime'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

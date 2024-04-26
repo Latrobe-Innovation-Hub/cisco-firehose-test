@@ -1,0 +1,9 @@
+If token has expired, follow these steps to re-init test app.
+
+1. Go to https://partners.dnaspaces.io/.
+2. Click on "App Activation Sandbox".
+3. Click on the 'IH-TEST2' app 'gear' in the top right corner.
+4. Click on "Renew".
+5. Click on "Generate Activation Key".
+6. Copy the generated key.
+7. Input the copied key when prompted while running start.py or index.py.

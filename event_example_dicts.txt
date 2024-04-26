@@ -1,0 +1,498 @@
+### ===========================================================================================
+### Print out examples for each event_type sent by firehose showing its dictionary structure...
+###
+###   Event types shown: ['KEEP_ALIVE',
+###                       'DEVICE_LOCATION_UPDATE',
+###                       'DEVICE_COUNT',
+###                       'DEVICE_PRESENCE',
+###                       'USER_PRESENCE',
+###                       'IOT_TELEMETRY'
+###                       'DEVICE_ENTRY',
+###                       'DEVICE_EXIT']
+### ===========================================================================================
+
+
+===== KEEP_ALIVE =====
+
+recordUid: event-96af2071
+recordTimestamp: 1686769647717
+spacesTenantId:
+spacesTenantName:
+partnerTenantId:
+eventType: KEEP_ALIVE
+
+
+===== DEVICE_LOCATION_UPDATE =====
+
+recordUid: event-b2095f43
+recordTimestamp: 1686765655804
+spacesTenantId: spaces-tenant-14ed9196
+spacesTenantName: latrobe.edu.au
+partnerTenantId: C381FB6142EC4D4F9B988C4555E66617
+eventType: DEVICE_LOCATION_UPDATE
+deviceLocationUpdate:
+  device:
+    deviceId: device-SSkghbV0UR8gD0oLxhhDJ
+    userId:
+    mobile:
+    email:
+    gender: GENDER_NOT_AVAILABLE
+    firstName:
+    lastName:
+    postalCode:
+    macAddress:
+    manufacturer:
+    os:
+    osVersion:
+    type: NOT_AVAILABLE
+    deviceModel:
+    dhcpProfileInfo:
+      dcProfileName:
+      dcDeviceClassTag:
+      dcCertaintyMetric:
+      dcProtocolMap:
+    openRoamingUserId:
+  location:
+    locationId: location-63c0913b
+    name: Level 3
+    inferredLocationTypes: ['FLOOR']
+    parent:
+      locationId: location-8a5ba379
+      name: Clinical Teaching
+      inferredLocationTypes: ['NETWORK', 'BUILDING']
+      parent:
+        locationId: location-41295e6f
+        name: Bendigo
+        inferredLocationTypes: ['CAMPUS']
+        parent:
+          locationId: location-2ca54429
+          name: LTU
+          inferredLocationTypes: ['CMX']
+          parent:
+            locationId: location-a2ccec3c
+            name: latrobe.edu.au
+            inferredLocationTypes: ['ROOT']
+            sourceLocationId:
+            apCount: 3050
+          sourceLocationId:
+          apCount: 3050
+        sourceLocationId: 9b71c6ad52c040ceaf13e371f335c142
+        apCount: 491
+      sourceLocationId: 610a93660ced420098c95c387b33b5fe
+      apCount: 17
+    sourceLocationId: 0d5accfbd61d4e3c815fb217da8109d7
+    floorNumber: 3
+    apCount: 9
+  ssid:
+  rawUserId:
+  visitId: visit--1
+  lastSeen: 1686765647000
+  deviceClassification:
+  mapId: b945ac108ed31d462d096e032ee2b1b6
+  xPos: 29.2
+  yPos: 1.8
+  confidenceFactor: 16.0
+  latitude: 0.0
+  longitude: 0.0
+  unc: 0.0
+  maxDetectedRssi: -29
+  ipv4:
+
+
+===== DEVICE_COUNT =====
+
+recordUid: event-e533a619
+recordTimestamp: 1686765705210
+spacesTenantId: spaces-tenant-14ed9196
+spacesTenantName: latrobe.edu.au
+partnerTenantId: C381FB6142EC4D4F9B988C4555E66617
+eventType: DEVICE_COUNT
+deviceCounts:
+  location:
+    locationId: location-55983ac7
+    name: BS1
+    inferredLocationTypes: ['NETWORK', 'BUILDING']
+    parent:
+      locationId: location-e8a574d2
+      name: Bundoora
+      inferredLocationTypes: ['CAMPUS']
+      parent:
+        locationId: location-2ca54429
+        name: LTU
+        inferredLocationTypes: ['CMX']
+        parent:
+          locationId: location-a2ccec3c
+          name: latrobe.edu.au
+          inferredLocationTypes: ['ROOT']
+          sourceLocationId:
+          apCount: 3050
+        sourceLocationId:
+        apCount: 3050
+      sourceLocationId: c263a9394995401382fc7726ed86443d
+      apCount: 2380
+    sourceLocationId: 569b9200d67c4265bfb839eab41ac97f
+    apCount: 31
+  associatedCount: 0
+  estimatedProbingCount: 2
+  probingRandomizedPercentage: 0.0
+  associatedDelta: 0
+  probingDelta: -1
+  estimatedDensity: 2.150537634408602e-05
+  estimatedCapacityPercentage: 200.0
+  userCount: 0
+  wirelessUserCount: 0
+  wiredUserCount: 0
+  rfidTagCount: 0
+  bleTagCount: 0
+
+
+===== DEVICE_PRESENCE =====
+
+recordUid: event-5ab7e8a5
+recordTimestamp: 1686765827662
+spacesTenantId: spaces-tenant-14ed9196
+spacesTenantName: latrobe.edu.au
+partnerTenantId: C381FB6142EC4D4F9B988C4555E66617
+eventType: DEVICE_PRESENCE
+devicePresence:
+  presenceEventType: DEVICE_ACTIVE_EVENT
+  wasInActive: True
+  device:
+    deviceId: device-k4JqfnO68UWF2BKY4Jhl
+    userId:
+    mobile:
+    email:
+    gender: GENDER_NOT_AVAILABLE
+    firstName:
+    lastName:
+    postalCode:
+    macAddress:
+    manufacturer:
+    os:
+    osVersion:
+    type: NOT_AVAILABLE
+    deviceModel:
+    dhcpProfileInfo:
+      dcProfileName:
+      dcDeviceClassTag:
+      dcCertaintyMetric:
+      dcProtocolMap:
+    openRoamingUserId:
+  location:
+    locationId: location-1c733ea3
+    name: Terrace 19
+    inferredLocationTypes: ['NETWORK', 'BUILDING']
+    parent:
+      locationId: location-41295e6f
+      name: Bendigo
+      inferredLocationTypes: ['CAMPUS']
+      parent:
+        locationId: location-2ca54429
+        name: LTU
+        inferredLocationTypes: ['CMX']
+        parent:
+          locationId: location-a2ccec3c
+          name: latrobe.edu.au
+          inferredLocationTypes: ['ROOT']
+          sourceLocationId:
+          apCount: 3050
+        sourceLocationId:
+        apCount: 3050
+      sourceLocationId: 9b71c6ad52c040ceaf13e371f335c142
+      apCount: 491
+    sourceLocationId: 0fd9efec087a40dd816cedbbe57f1fb5
+    apCount: 2
+  ssid: ltu-iot
+  rawUserId: device-k4JqfnO68UWF2BKY4Jhl
+  visitId: visit-7490942904009610912
+  daysSinceLastVisit: 5
+  entryTimestamp: 1686639204000
+  entryDateTime: 2023-06-13T16:53:24+10:00[Australia/Melbourne]
+  exitTimestamp: 0
+  exitDateTime:
+  visitDurationMinutes: 0
+  timeZone: Australia/Melbourne
+  deviceClassification:
+  visitClassification:
+  activeDevicesCount: 1
+  inActiveDevicesCount: 2
+
+
+===== USER_PRESENCE =====
+
+recordUid: event-18de0d4a
+recordTimestamp: 1686765828389
+spacesTenantId: spaces-tenant-14ed9196
+spacesTenantName: latrobe.edu.au
+partnerTenantId: C381FB6142EC4D4F9B988C4555E66617
+eventType: USER_PRESENCE
+userPresence:
+  presenceEventType: USER_ACTIVE_EVENT
+  wasInActive: True
+  user:
+    userId:
+    deviceIds: ['device-k4JqfnO68UWF2BKY4Jhl']
+    mobile:
+    email:
+    gender: GENDER_NOT_AVAILABLE
+    firstName:
+    lastName:
+    postalCode:
+    openRoamingUserId:
+  location:
+    locationId: location-f8cded8a
+    name: Rooms
+    inferredLocationTypes: ['FLOOR']
+    parent:
+      locationId: location-1c733ea3
+      name: Terrace 19
+      inferredLocationTypes: ['NETWORK', 'BUILDING']
+      parent:
+        locationId: location-41295e6f
+        name: Bendigo
+        inferredLocationTypes: ['CAMPUS']
+        parent:
+          locationId: location-2ca54429
+          name: LTU
+          inferredLocationTypes: ['CMX']
+          parent:
+            locationId: location-a2ccec3c
+            name: latrobe.edu.au
+            inferredLocationTypes: ['ROOT']
+            sourceLocationId:
+            apCount: 3050
+          sourceLocationId:
+          apCount: 3050
+        sourceLocationId: 9b71c6ad52c040ceaf13e371f335c142
+        apCount: 491
+      sourceLocationId: 0fd9efec087a40dd816cedbbe57f1fb5
+      apCount: 2
+    sourceLocationId: e70fe3dc1f5c4c6e99d4d7497dda5242
+    floorNumber: 1
+    apCount: 2
+  rawUserId:
+  visitId: visit-7490942904009610912
+  entryTimestamp: 1686639204000
+  entryDateTime: 2023-06-13T16:53:24+10:00[Australia/Melbourne]
+  exitTimestamp: 0
+  exitDateTime:
+  visitDurationMinutes: 0
+  timeZone: Australia/Melbourne
+  activeUsersCount:
+    usersWithUserId: 0
+    usersWithoutUserId: 1
+    totalUsers: 1
+  inActiveUsersCount:
+    usersWithUserId: 0
+    usersWithoutUserId: 2
+    totalUsers: 2
+  connection: CONN_WIRELESS
+
+
+===== IOT_TELEMETRY =====
+
+recordUid: event-383a6659
+recordTimestamp: 1686765671375
+spacesTenantId: spaces-tenant-14ed9196
+spacesTenantName: latrobe.edu.au
+partnerTenantId: C381FB6142EC4D4F9B988C4555E66617
+eventType: IOT_TELEMETRY
+iotTelemetry:
+  deviceInfo:
+    deviceType: IOT_BLE_DEVICE
+    deviceId: 81qG000H
+    deviceMacAddress: d0:fb:f3:69:79:52
+    group: ['AIoTCentre_CO2_sensors']
+    deviceName:
+    firmwareVersion:
+    rawDeviceId:
+    manufacturer:
+    companyId:
+    serviceUuid: 6afe
+    label:
+    vendorId: SMSD
+    deviceModel: SSD002_02
+  detectedPosition:
+    xPos: 106.0
+    yPos: 51.7
+    latitude: 0.0
+    longitude: 0.0
+    confidenceFactor: 40.0
+    mapId: 99dd417678f0d245804cac1adc5f477d
+    locationId: location-b3d341df
+    lastLocatedTime: 1686765111000
+  location:
+    locationId: location-b3d341df
+    name: Level 3
+    inferredLocationTypes: ['FLOOR']
+    parent:
+      locationId: location-56e3e6e6
+      name: DMW
+      inferredLocationTypes: ['NETWORK', 'BUILDING']
+      parent:
+        locationId: location-e8a574d2
+        name: Bundoora
+        inferredLocationTypes: ['CAMPUS']
+        parent:
+          locationId: location-2ca54429
+          name: LTU
+          inferredLocationTypes: ['CMX']
+          parent:
+            locationId: location-a2ccec3c
+            name: latrobe.edu.au
+            inferredLocationTypes: ['ROOT']
+            sourceLocationId:
+            apCount: 3050
+          sourceLocationId:
+          apCount: 3050
+        sourceLocationId: c263a9394995401382fc7726ed86443d
+        apCount: 2380
+      sourceLocationId: 9f94cecb66cc43ecab3b175b5818928e
+      apCount: 52
+    sourceLocationId: d115275184cd4eeba70604ece41a0e2b
+    floorNumber: 3
+    apCount: 23
+  deviceRtcTime: -1
+  battery:
+    value: 100.0
+    unit: PERCENTAGE
+    lastRetrieved: 1686765581107
+  rawHeader: 0
+  rawPayload: AgEGERZq/gKAAQlk8DgxcUcwMDBI
+  sequenceNum: 0
+  maxDetectedRssi: -75
+
+
+===== DEVICE_ENTRY =====
+
+recordUid: event-9019b9b3
+recordTimestamp: 1686766302469
+spacesTenantId: spaces-tenant-14ed9196
+spacesTenantName: latrobe.edu.au
+partnerTenantId: C381FB6142EC4D4F9B988C4555E66617
+eventType: DEVICE_ENTRY
+deviceEntry:
+  device:
+    deviceId: device-dVOeMwfqSoNNwwiT1Brc
+    userId:
+    mobile:
+    email:
+    gender: GENDER_NOT_AVAILABLE
+    firstName:
+    lastName:
+    postalCode:
+    macAddress:
+    manufacturer:
+    os:
+    osVersion:
+    type: NOT_AVAILABLE
+    deviceModel:
+    dhcpProfileInfo:
+      dcProfileName:
+      dcDeviceClassTag:
+      dcCertaintyMetric:
+      dcProtocolMap:
+    openRoamingUserId:
+  location:
+    locationId: location-ab2b5bac
+    name: MCSW
+    inferredLocationTypes: ['NETWORK', 'BUILDING']
+    parent:
+      locationId: location-e8a574d2
+      name: Bundoora
+      inferredLocationTypes: ['CAMPUS']
+      parent:
+        locationId: location-2ca54429
+        name: LTU
+        inferredLocationTypes: ['CMX']
+        parent:
+          locationId: location-a2ccec3c
+          name: latrobe.edu.au
+          inferredLocationTypes: ['ROOT']
+          sourceLocationId:
+          apCount: 3050
+        sourceLocationId:
+        apCount: 3050
+      sourceLocationId: c263a9394995401382fc7726ed86443d
+      apCount: 2380
+    sourceLocationId: 38138edf78f7414c84de66ecc67d921d
+    apCount: 41
+  visitId: visit-6960753574251280832
+  entryTimestamp: 1686765976000
+  entryDateTime: 2023-06-15T04:06:16+10:00[Australia/Melbourne]
+  timeZone: Australia/Melbourne
+  deviceClassification:
+  daysSinceLastVisit: 1
+
+
+===== DEVICE_EXIT =====
+
+recordUid: event-3c8d9af6
+recordTimestamp: 1686766345102
+spacesTenantId: spaces-tenant-14ed9196
+spacesTenantName: latrobe.edu.au
+partnerTenantId: C381FB6142EC4D4F9B988C4555E66617
+eventType: DEVICE_EXIT
+deviceExit:
+  device:
+    deviceId: device-9TJwH0hk8abyPrVabZlYwN
+    userId:
+    mobile:
+    email:
+    gender: GENDER_NOT_AVAILABLE
+    firstName:
+    lastName:
+    postalCode:
+    macAddress:
+    manufacturer:
+    os:
+    osVersion:
+    type: NOT_AVAILABLE
+    deviceModel:
+    dhcpProfileInfo:
+      dcProfileName:
+      dcDeviceClassTag:
+      dcCertaintyMetric:
+      dcProtocolMap:
+    openRoamingUserId:
+  location:
+    locationId: location-7043bd7a
+    name: South Wing Level 1
+    inferredLocationTypes: ['FLOOR']
+    parent:
+      locationId: location-3762c29f
+      name: Glenn College
+      inferredLocationTypes: ['NETWORK', 'BUILDING']
+      parent:
+        locationId: location-e8a574d2
+        name: Bundoora
+        inferredLocationTypes: ['CAMPUS']
+        parent:
+          locationId: location-2ca54429
+          name: LTU
+          inferredLocationTypes: ['CMX']
+          parent:
+            locationId: location-a2ccec3c
+            name: latrobe.edu.au
+            inferredLocationTypes: ['ROOT']
+            sourceLocationId:
+            apCount: 3050
+          sourceLocationId:
+          apCount: 3050
+        sourceLocationId: c263a9394995401382fc7726ed86443d
+        apCount: 2380
+      sourceLocationId: d4cfbb0b8cef4aceb406549ee19806f6
+      apCount: 180
+    sourceLocationId: c451f11d881c44399986c79217cd90ad
+    floorNumber: 1
+    apCount: 13
+  visitId: visit-545659792688512064
+  visitDurationMinutes: 59
+  entryTimestamp: 1686751899000
+  entryDateTime: 2023-06-15T00:11:39+10:00[Australia/Melbourne]
+  exitTimestamp: 1686755498000
+  exitDateTime: 2023-06-15T01:10:39+10:00[Australia/Melbourne]
+  timeZone: Australia/Melbourne
+  deviceClassification:
+  visitClassification:
+
