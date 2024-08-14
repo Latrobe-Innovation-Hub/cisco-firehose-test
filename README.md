@@ -20,7 +20,8 @@
    - Click on the gear icon for the 'IH-TEST2' app.  
    - Select 'Renew' and then 'Generate Activation Key'.  
    - Copy the generated key.  
-   - Input the key when prompted.  
+   - Input the key when prompted.
+   - working key as of august 2024: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhcHBJZCI6ImFwcC1FQkVBQTQwNzU3Mjg0OUE3ODJGRkFCQzgzMEY3NjFCQyIsInZlcnNpb24iOiJ2MSIsImFjdGl2YXRpb25SZWZJZCI6IjU3RTM3MDVBNzZERTQzOURBREY0QTE4REU1REY0Q0UwIiwiY3VzdG9tZXIiOiJsYXRyb2JlLmVkdS5hdSIsImV4cGlyZXNJbiI6MTcyMzk3MTg1ODI2NCwidGVuYW50SWQiOjE2NzY4LCJiYXNlVXJsIjoiaHR0cHM6Ly9wYXJ0bmVycy5kbmFzcGFjZXMuaW8iLCJwYXJ0bmVyVGVuYW50SWQiOiI4NkIwQTA2QjRFMzI0RDgyQTdBNTY2RjUwMTg5NTkwMSIsImlhdCI6MTcyMzYxNTQ1OCwiZXhwIjoxNzIzOTcxODU4fQ.FTItdRYkS9DVvQ4h6pEgNrDGkzxscXcQLtXLpFzMdqXh2PlTLcxOpQd7VtqGwNX54fOWps1R87HESGuamaRZQyBtoD9yqEt_QEhz__UZewBcdZiCD0wDyNp2bL2EIDqYWsvPIPF4pxXg3nYK7OQXvSs71RxncQDxEC3nuM0N4mc   
    
 5. The demo will start sending and receiving active user data through the Cisco Firehose API.  
    - The Cisco Firehose API sends 'event' messages.  
